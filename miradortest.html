@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello! I'm Mirador 3️⃣</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the Mirador 3️⃣ -->
+    <script src="https://unpkg.com/mirador@alpha/dist/mirador.min.js"></script>
+  </head>  
+  <body>
+    <h1>Hi there!</h1>
+    
+    <p>
+      I'm your cool new Mirador. Made with <a href="https://glitch.com">Glitch</a>!
+      For a more complex start to setting up Mirador, checkout the <a href="https://codesandbox.io/s/mirador-plugin-example-pgg5k">CodeSandbox example</a>
+    </p>
+    <div id="mirador"></div>
+    <script type="text/javascript">
+      const mirador = Mirador.viewer({
+        id: "mirador",
+        // All of the settings (with descriptions (ﾉ^∇^)ﾉﾟ) located here:
+        // https://github.com/ProjectMirador/mirador/blob/master/src/config/settings.js
+    </script>
+
+    <hr>
+
+    <div id="mirador2"></div>
+
+  <script type="text/javascript">
+      Mirador.viewer({
+        id: "mirador2",
+        // Look you can open up Mirador with windows!!
+        windows: [
+          {
+            manifestId: 'https://iiif.bodleian.ox.ac.uk/iiif/manifest/b5695dfe-9ff5-4633-8452-bdadcedba3e8.json'
+          },
+          {
+            manifestId: 'https://iiif.bodleian.ox.ac.uk/iiif/manifest/b8dc946d-2160-4bd6-9293-e16dace1c406.json',
+            canvasIndex: 1
+          },
+          {
+              manifestId: 'https://iiif.bodleian.ox.ac.uk/iiif/manifest/0768c338-43fc-4fc4-ac56-ab774dd3aeaa.json',
+          }
+        ]
+      });
+    </script> 
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
